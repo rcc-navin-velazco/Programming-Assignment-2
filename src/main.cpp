@@ -20,7 +20,7 @@ int main() {
     int wrongGuesses = 0;
     const int MAX_WRONG = 6;
 
-    while (wrongGuesses < MAX_WRONG && !isWordGuessed(hiddenWord)) {
+    while (wrongGuesses < MAX_WRONG && !isWordGuessed(hiddenWord,secretWord)) {
         displayGameState(hiddenWord, guessedLetters, wrongGuesses);
         std::cout << "Enter a letter: ";
         char guess;
@@ -48,7 +48,7 @@ int main() {
         std::cout << std::endl;
     }
 
-    if (isWordGuessed(hiddenWord)) {
+    if (isWordGuessed(hiddenWord,secretWord)) {
         std::cout << "🎉 Congratulations! You guessed the word: " << secretWord << std::endl;
     } else {
         std::cout << "😞 You lost. The word was: " << secretWord << std::endl;

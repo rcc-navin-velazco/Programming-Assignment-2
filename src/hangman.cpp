@@ -32,7 +32,7 @@ void displayGameState(const std::string& hiddenWord, const std::vector<char>& gu
     // TODO: Print the hidden word (with spaces), guessed letters, and wrong guess count
 }
 
-bool isWordGuessed(const std::string& hiddenWord) {
-    // TODO: Return true if there are no underscores left in hiddenWord
+bool isWordGuessed(const std::string& hiddenWord, const std::string& secret_word) {
+    // TODO: Return true if hiddenWord is equal to secret word
     return false;
 }

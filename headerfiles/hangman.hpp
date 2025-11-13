@@ -24,6 +24,6 @@ bool alreadyGuessed(const std::vector<char>& guessedLetters, char guess);
 void displayGameState(const std::string& hiddenWord, const std::vector<char>& guessedLetters, int wrongGuesses);
 
 // Returns true if the player has guessed all letters
-bool isWordGuessed(const std::string& hiddenWord);
+bool isWordGuessed(const std::string& hiddenWord,const std::string& secret_word);
 
 #endif
